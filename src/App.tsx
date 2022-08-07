@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useCallback, useState } from 'react';
+import GlobalStyle from './Styles/global';
+import { ThemeProvider } from 'styled-components';
+import light from './Styles/Theme/light';
+import dark from './Styles/Theme/dark';
+import DashBoard from './Pages/DashBoard';
+
 
 function App() {
+  const [theme, setTheme] = useState(dark);
+
+  const themeTogller = useCallback(() => {
+    setTheme(theme.title === 'light' ? dark : light)
+  }, [theme])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className='App'>
+        <GlobalStyle />
+        <DashBoard themeTogller={themeTogller} />
+      </div>
+    </ThemeProvider>
+
   );
 }
 

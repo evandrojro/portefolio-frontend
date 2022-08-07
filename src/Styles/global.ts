@@ -43,7 +43,7 @@ h3 {
 }
 
 body, button, textarea, input {
-    font-family: ''DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 400;
   }
 
