@@ -1,17 +1,15 @@
 import styled from "styled-components";
-import { shade } from "polished";
 
 export const Container = styled.div`
   .headerContainer{
-    height: 5rem;
+    height: 8rem;
     border-bottom: 1px solid ${props=> props.theme.colors.borderBottom};
     background-color: ${props => props.theme.colors.secondary};
 }
 
 .headerContent{
-
-    height: 5rem;
-    margin: 0 auto;
+    height: 8rem;
+    margin: 0;
     padding: 0 2rem;
 
     display: flex;
@@ -24,6 +22,10 @@ export const Container = styled.div`
         a{
             display: inline-block;
             position: relative;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
 
             padding: 0 0.5rem;
             height: 5rem;

@@ -3,10 +3,10 @@ export default {
 
     colors: {
         primary: '#484b6a',
-        secondary: ' #8AC4FF',
+        secondary: ' #00DF5E',
         background: '#fafafa',
         textPrimary: '#212121',
-        textSecondary: '#828282',
+        textSecondary: '#212121',
         borderBottom:'#8AC4FF',
     }
 }

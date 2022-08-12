@@ -17,8 +17,8 @@ body{
 h1 {
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: 800;
+    font-size: 40px;
     line-height: 47px;
     color:${props => props.theme.colors.textPrimary};
 }

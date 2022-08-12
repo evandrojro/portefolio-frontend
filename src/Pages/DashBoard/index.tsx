@@ -1,4 +1,6 @@
+import DashboardContent from "../../Components/DashboardContent";
 import NavBar from "../../Components/Navbar";
+import { Container } from "./styles";
 
 interface Props {
     themeTogller: () => void;
@@ -6,7 +8,10 @@ interface Props {
 
 const DashBoard = ({ themeTogller }: Props) => {
     return (
-        <NavBar themeTogller={themeTogller} />
+        <Container>
+            <NavBar themeTogller={themeTogller} />
+            <DashboardContent />
+        </Container>
     )
 }
 

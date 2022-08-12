@@ -14,7 +14,7 @@ const NavBar = ({ themeTogller }: Props) => {
         <Container>
             <header className="headerContainer" >
                 <div className="headerContent">
-                    <h2>Portfólio</h2>
+                    <h1>Portfólio</h1>
                     <nav>
                         <a className='active'>Home</a>
                         <a>Sobre mim</a>
