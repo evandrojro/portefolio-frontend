@@ -1,7 +1,10 @@
-import { Button } from "@mui/material";
+import { Button, useMediaQuery } from "@mui/material";
 import { Container, ContainerButton, Figure, TextSection } from "./styles";
 
 const DashboardContent = () => {
+    const isMobile = useMediaQuery('(max-width:400px)');
+    const isTablet = useMediaQuery('(max-width:760px)');
+    
     return (
         <Container>
             <TextSection>
@@ -15,7 +18,7 @@ const DashboardContent = () => {
                 <Button className="secondButton">Github</Button>
             </ContainerButton>
             <Figure>
-                <img alt="ilustration" src='assets/dashboardimg.svg' />
+                <img className="ilustration" alt="ilustration" src='assets/dashboardimg.svg' />
             </Figure>
         </Container>
     );

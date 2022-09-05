@@ -5,6 +5,8 @@ export const Container = styled.div`
     height: 8rem;
     border-bottom: 1px solid ${props=> props.theme.colors.borderBottom};
     background-color: ${props => props.theme.colors.secondary};
+    width: 100%;
+
 }
 
 .headerContent{
@@ -14,10 +16,11 @@ export const Container = styled.div`
 
     display: flex;
     align-items: center;
-
+    width: 100%;
     nav{
         margin-left: 5rem;
         height: 5rem;
+        width: 100%;
 
         a{
             display: inline-block;
@@ -25,7 +28,7 @@ export const Container = styled.div`
             font-family: 'DM Sans';
             font-style: normal;
             font-weight: 600;
-            font-size: 20px;
+            font-size: 1.3rem;
 
             padding: 0 0.5rem;
             height: 5rem;

@@ -61,4 +61,21 @@ export const ContainerButton = styled.div`
         width: 9rem;
         color: ${props => props.theme.colors.textPrimary};
     }
+
+
+@media (max-width:400px) {
+   
+    .firstButton{
+        background-color: #00DF5E;
+        color: black;
+        width: 3rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width:760px) {
+    .ilustration {
+        display: none;
+    }
+}
 `

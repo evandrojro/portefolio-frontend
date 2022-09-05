@@ -18,8 +18,8 @@ h1 {
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: 800;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 2.6rem;
+    line-height: 3.1rem;
     color:${props => props.theme.colors.textPrimary};
 }
 
@@ -27,8 +27,8 @@ h2 {
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 47px;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
     color:${props => props.theme.colors.textPrimary};
 }
 
@@ -37,8 +37,8 @@ h3 {
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 34px;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
     color:${props => props.theme.colors.textPrimary};
 }
 
